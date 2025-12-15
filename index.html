@@ -258,16 +258,6 @@
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                      <span class="link-block">
-                        <a href="arxiv__Fine_Grain_Attention_DiT-2.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
                   <span class="link-block">
                     <a href="https://github.com/sankeerth95/FG-Attn" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -279,7 +269,7 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="https://arxiv.org" target="_blank"
+                  <a href="https://arxiv.org/abs/2509.16518" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -294,6 +284,40 @@
     </div>
   </div>
 </section>
+
+
+<!-- Overview Images -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered is-vcentered">
+        <div class="column is-5">
+          <div class="has-text-centered" style="display: flex; flex-direction: column; height: 100%;">
+            <h3 class="subtitle is-5">Block Sparse Attention</h3>
+            <div style="flex-grow: 1; display: flex; align-items: flex-end; justify-content: center;">
+              <img src="static/images/flashattn_overview.png" alt="Block Sparse Attention Overview" style="width: 110%; height: auto;"/>
+            </div>
+            <p class="content has-text-justified" style="margin-top: 1rem; font-size: 0.9rem;">
+              Block Sparse Attention: tiles of keys, values are loaded into shared memory. Tensor cores are used to compute a partial sum of the output vector.
+            </p>
+          </div>
+        </div>
+        <div class="column is-5">
+          <div class="has-text-centered" style="display: flex; flex-direction: column; height: 100%;">
+            <h3 class="subtitle is-5">FG-Attn</h3>
+            <div style="flex-grow: 1; display: flex; align-items: flex-end; justify-content: center;">
+              <img src="static/images/fgattn_overview.png" alt="FG-ATTN Overview" style="width: 80%; height: auto;"/>
+            </div>
+            <p class="content has-text-justified" style="margin-top: 1rem; font-size: 0.9rem;">
+              FG-Attn: only relevant keys and values corresponding to indices in sparse index mask are loaded into shared memory
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End overview images -->
 
 
 <!-- Paper abstract -->
@@ -320,55 +344,13 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
 <!-- Paper poster -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/arxiv__Fine_Grain_Attention_DiT-2.pdf" width="100%" height="550">
           </iframe>
         
       </div>
